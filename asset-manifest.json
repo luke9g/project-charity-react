@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/project-charity-react/static/css/main.7ebc6406.chunk.css",
-    "main.js": "/project-charity-react/static/js/main.018e0fba.chunk.js",
-    "main.js.map": "/project-charity-react/static/js/main.018e0fba.chunk.js.map",
+    "main.js": "/project-charity-react/static/js/main.72bd6cc0.chunk.js",
+    "main.js.map": "/project-charity-react/static/js/main.72bd6cc0.chunk.js.map",
     "runtime-main.js": "/project-charity-react/static/js/runtime-main.1f0363b2.js",
     "runtime-main.js.map": "/project-charity-react/static/js/runtime-main.1f0363b2.js.map",
     "static/css/2.5cbd10d4.chunk.css": "/project-charity-react/static/css/2.5cbd10d4.chunk.css",
@@ -29,6 +29,6 @@
     "static/css/2.5cbd10d4.chunk.css",
     "static/js/2.44f74277.chunk.js",
     "static/css/main.7ebc6406.chunk.css",
-    "static/js/main.018e0fba.chunk.js"
+    "static/js/main.72bd6cc0.chunk.js"
   ]
 }
