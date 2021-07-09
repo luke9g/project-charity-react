@@ -1,0 +1,209 @@
+@import "./settings/_fonts.scss";
+@import "./settings/_colors.scss";
+
+section {
+  .loginRegister-form-box {
+    max-width: 500px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 28px;
+      line-height: 40px;
+      padding: 40px 20px 20px 20px;
+      box-sizing: border-box;
+      text-align: center;
+      color: $color5;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+        height: 33px;
+        background-image: url("./../assets/images/Decoration.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    .success-message {
+      color: green;
+      font-weight: 600;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .error-message {
+      color: red;
+      font-weight: 600;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    form {
+      margin-top: 20px;
+
+      label {
+        width: 100%;
+        max-width: 320px;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding-bottom: 10px;
+        padding-left: 3px;
+        color: $color5;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      input {
+        width: 100%;
+        max-width: 320px;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+        color: $color5;
+        font-family: $font-base;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        border: none;
+        border-bottom: 1px solid $color4;
+        padding: 3px;
+        background: none;
+
+        &.invalid-input {
+          border-bottom-color: red;
+        }
+      }
+
+      .invalid-message {
+        max-width: 320px;
+        margin: 0 auto;
+        color: red;
+        font-size: 12px;
+        padding-top: 3px;
+        padding-left: 3px;
+      }
+
+      .loginRegister-form-inputs {
+        background: $color1;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 40px 20px 44px 20px;
+        box-sizing: border-box;
+
+        .loginRegister-password {
+          margin-top: 40px;
+        }
+      }
+
+      .loginRegister-form-buttons {
+        width: 100%;
+        margin: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        a {
+          display: block;
+          width: 120px;
+          font-size: 16px;
+          text-decoration: none;
+          text-align: center;
+          color: $color5;
+          box-sizing: border-box;
+          padding: 10px;
+          border: 0.75px solid rgba(255, 255, 255, 0);
+          cursor: pointer;
+
+          &:hover {
+            border-color: $color4;
+          }
+        }
+
+        button[type="submit"] {
+          width: 120px;
+          border: 0.75px solid $color4;
+          box-sizing: border-box;
+          padding: 10px;
+          background: none;
+          font: inherit;
+          font-size: 16px;
+          color: $color5;
+          text-align: center;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $color4;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .loginRegister-loggedOut {
+    h1 {
+      font-size: 28px;
+      line-height: 40px;
+      padding: 40px 20px 40px 20px;
+      box-sizing: border-box;
+      text-align: center;
+      color: $color5;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+        height: 33px;
+        background-image: url("./../assets/images/Decoration.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    a {
+      display: block;
+      max-width: 180px;
+      margin: 0 auto 40px auto;
+      font-size: 16px;
+      text-decoration: none;
+      text-align: center;
+      color: $color5;
+      box-sizing: border-box;
+      padding: 10px;
+      border: 0.75px solid $color4;
+      cursor: pointer;
+
+      &:hover {
+        background: $color4;
+        color: #fff
+      }
+    }
+  }
+}
+
+
+@media (max-width: 400px) {
+  section {
+    .loginRegister-form-box {
+      form {
+        .loginRegister-form-buttons {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          a {
+            order: 2;
+            margin-top: 30px;
+            width: 150px;
+          }
+          button[type="submit"] {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}

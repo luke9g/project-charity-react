@@ -1,0 +1,90 @@
+@import "./settings/_colors";
+
+#aboutUs {
+  background-color: $color1;
+  overflow: hidden;
+
+  .aboutUs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .aboutUs-info {
+      flex: 1;
+      min-height: 500px;
+      padding: 50px 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        width: 75%;
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        color: $color5;
+
+        &::after {
+          content: "";
+          display: inline-block;
+          margin-top: 20px;
+          width: 100%;
+          height: 33px;
+          background-image: url("./../assets/images/Decoration.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+
+      p {
+        width: 75%;
+        text-align: center;
+        font-size: 18px;
+        line-height: 34px;
+        color: $color5;
+      }
+
+      .signature {
+        width: 75%;
+        min-width: 8em;
+        height: 7em;
+        background-image: url("./../assets/images/Signature.svg");
+        background-size: 8em;
+        background-repeat: no-repeat;
+        background-position: center right;
+      }
+    }
+
+    .aboutUs-photo {
+      flex: 1;
+      min-height: min-content;
+      position: relative;
+      img {
+        height: 100%;
+        position: absolute;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  #aboutUs {
+    .aboutUs-wrapper {
+      flex-direction: column;
+      .aboutUs-photo {
+        position: unset;
+        margin-left: -20px;
+        margin-right: -20px;
+        img {
+          position: unset;
+          width: 100%;
+          height: 350px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+@import "./settings/_colors";
+
+header {
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 10px 0;
+
+    li {
+      word-break: break-word;
+      text-align: right;
+    }
+
+    a, button {
+      cursor: pointer;
+      display: block;
+      height: 100%;
+      text-decoration: none;
+      background: none;
+      color: inherit;
+      font: inherit;
+      box-sizing: border-box;
+      padding: 7px 20px;
+    }
+
+    &.before-login-menu {
+      font-size: 14px;
+      font-weight: 400;
+      color: $color4;
+
+      a {
+        border: 0.75px solid rgba(255, 255, 255, 0);
+
+        &:hover {
+          border-color: $color3;
+        }
+      }
+    }
+
+    &.after-login-menu {
+      font-size: 14px;
+      font-weight: 600;
+      color: $color5;
+
+      a {
+        border: 0.75px solid rgba(255, 255, 255, 0);
+
+        &:hover {
+          border-color: $color3;
+        }
+      }
+
+      button {
+        border: 0.75px solid rgba(255, 255, 255, 0);
+
+        &:hover {
+          border-color: $color3;
+        }
+
+        &.log-out-button {
+          font-weight: 400;
+          color: $color4;
+        }
+      }
+
+      div.menu-user-name {
+        height: 100%;
+        font: inherit;
+        border: 1px solid rgba(255, 255, 255, 0);
+        box-sizing: border-box;
+        padding: 7px 20px;
+      }
+    }
+
+    &.main-menu {
+      font-size: 18px;
+      color: $color5;
+
+      a {
+        border: 0.75px solid rgba(255, 255, 255, 0);
+
+        &:hover {
+          border-color: $color4;
+        }
+      }
+    }
+  }
+
+  .burger-menu {
+    display: none;
+    width: 25px;
+    background: none;
+    cursor: pointer;
+    margin: 20px 20px 10px auto;
+    z-index: 100;
+    position: relative;
+    .line1, .line2, .line3 {
+      width: 100%;
+      height: 3px;
+      margin: 3px 0;
+      background-color: $color5;
+      transition: 0.4s ease-out;
+    }
+
+    .line1.active {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .line2.active {
+      opacity: 0;
+    }
+
+    .line3.active {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .burger-menu-opened {
+    max-height: 101vh;
+  }
+  header {
+    position: relative;
+    .burger-menu {
+      display: block;
+    }
+    .menus-wrapper {
+      background-color: $color1;
+      box-shadow: none;
+      position: absolute;
+      z-index: 10;
+      padding: 40px 20px 20px 20px;
+      box-sizing: border-box;
+      margin: 0;
+      right: 0;
+      top: calc(0% - 20px);
+      height: 101vh;
+      max-width: 90%;
+      overflow-y: scroll;
+      transform: translateX(100%);
+      transition: 0.3s ease-out;
+      &.active {
+        transform: translateX(0%);
+        box-shadow: -2px 0px 30px 0px rgba($color5, 0.2);
+      }
+    }
+    ul.main-menu {
+      flex-direction: column;
+      justify-content: unset;
+      align-items: flex-end;
+      &:before {
+        content: "";
+        display: block;
+        width: 75%;
+        height: 1px;
+        background-color: $color4;
+        margin: 0 0 10px auto;
+      }
+    }
+    ul.before-login-menu, ul.after-login-menu {
+      flex-direction: column;
+      justify-content: unset;
+      align-items: flex-end;
+    }
+    li + li {
+      margin-top: 7px;
+    }
+  }
+}

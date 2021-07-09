@@ -1,0 +1,132 @@
+@import "./settings/_colors";
+
+#simpleSteps {
+  h1 {
+    width: 100%;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+    box-sizing: border-box;
+    color: $color5;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      margin-top: 20px;
+      width: 100%;
+      height: 33px;
+      background-image: url("./../assets/images/Decoration.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .icons-section {
+    background-color: $color1;
+  }
+
+  .icons-section-wrapper {
+    display: flex;
+
+    .icons-centerbox {
+      max-width: 50em;
+      padding-top: 40px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      div.icon {
+        flex: 1;
+        min-width: 150px;
+        padding: 0 35px 40px 35px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        div.icon-image {
+          min-height: 100px;
+          background-position: center center;
+          background-size: 5em;
+          background-repeat: no-repeat;
+        }
+
+        div.icon-shirt {
+          background-image: url("./../assets/images/Icon-1.svg");
+        }
+
+        div.icon-bag {
+          background-image: url("./../assets/images/Icon-2.svg");
+        }
+
+        div.icon-magnifier {
+          background-image: url("./../assets/images/Icon-3.svg");
+          background-size: 5.5em;
+        }
+
+        div.icon-arrows {
+          background-image: url("./../assets/images/Icon-4.svg");
+          background-size: 4.5em;
+        }
+
+        h2 {
+          font-size: 18px;
+          line-height: 20px;
+          text-align: center;
+          margin-top: 10px;
+          margin-bottom: 15px;
+          color: $color5;
+
+          &::after {
+            content: "";
+            display: block;
+            margin: 10px auto 0 auto;
+            max-width: 5em;
+            height: 1px;
+            background-color: $color4;
+          }
+        }
+
+        div.icon-info {
+          font-size: 16px;
+          line-height: 18px;
+          text-align: center;
+          color: $color5;
+        }
+      }
+    }
+  }
+
+  .button-wrapper {
+    text-align: center;
+  }
+
+  .cta-button {
+    display: inline-block;
+    min-width: 220px;
+    border: 0.75px solid $color4;
+    text-align: center;
+    margin: 30px 0 50px 0;
+
+    a {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 35px;
+      color: $color5;
+      padding: 10px;
+      box-sizing: border-box;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color4;
+        color: #fff;
+      }
+    }
+  }
+}

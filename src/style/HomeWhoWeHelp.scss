@@ -1,0 +1,188 @@
+@import "./settings/_colors";
+@import "./settings/_fonts";
+
+#whoWeHelp {
+  h1 {
+    width: 100%;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+    box-sizing: border-box;
+    color: $color5;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      margin-top: 20px;
+      width: 100%;
+      height: 33px;
+      background-image: url("./../assets/images/Decoration.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  div.buttons-wrapper {
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  div.cta-button {
+    width: 180px;
+    min-height: 56px;
+    border: 0.75px solid $color4;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    button {
+      width: 100%;
+      height: 100%;
+      background: none;
+      border: none;
+      font: inherit;
+      font-size: 18px;
+      color: $color5;
+      padding: 10px;
+      box-sizing: border-box;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color4;
+        color: #fff;
+      }
+    }
+
+    .active {
+      background-color: $color4;
+      color: #fff;
+    }
+  }
+
+  .institution {
+    padding: 20px;
+  }
+
+  .institution-info {
+    margin: 0 auto;
+    color: $color5;
+    max-width: 500px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .institution-items {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .institution-item {
+    min-height: 85px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    color: $color5;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .institution-item-description {
+      flex: 1;
+      min-width: 60%;
+      font-family: $font-alt;
+      font-weight: 300;
+
+      h2 {
+        font-size: 19px;
+        padding-bottom: 10px;
+      }
+
+      .mission {
+        font-size: 14px;
+        font-style: italic;
+      }
+    }
+
+    .institution-item-things {
+      flex: 1;
+      min-width: 40%;
+      text-align: right;
+      font-family: $font-alt;
+      font-weight: 300;
+      font-size: 14px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: rgba($color4, 0.5);
+      position: absolute;
+      bottom: -6px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+
+      &:after {
+        display: none
+      }
+    }
+  }
+
+  .institution-pagination {
+    min-height: 85px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    color: $color5;
+    display: flex;
+    justify-content: center;
+
+    .pagination-button {
+      background: none;
+      font: inherit;
+      cursor: pointer;
+      color: $color5;
+      margin: 0 10px;
+      padding: 12px 10px;
+      box-sizing: border-box;
+      border: 0.75px solid rgba(255, 255, 255, 0);
+
+      &:hover {
+        border-color: $color4;
+      }
+    }
+
+    .active {
+      border: 0.75px solid $color4;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  #whoWeHelp {
+    div.cta-button {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  #whoWeHelp {
+    .institution-item {
+      display: block;
+      .institution-item-things {
+        padding-top: 20px;
+        text-align: left;
+      }
+    }
+  }
+}
