@@ -15,7 +15,7 @@ class App extends React.Component {
       <BrowserRouter>
         <Navigation/>
         <Switch>
-          <Route path={"/"} exact component={Home}/>
+          <Route path={"/project-charity-react"} exact component={Home}/>
           <Route path={"/oddaj-rzeczy"} exact component={GiveAwayThings}/>
           <Route path={"/logowanie"} exact component={Login}/>
           <Route path={"/rejestracja"} exact component={Register}/>
