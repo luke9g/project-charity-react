@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/project-charity-react/static/css/main.7ebc6406.chunk.css",
+    "main.js": "/project-charity-react/static/js/main.018e0fba.chunk.js",
+    "main.js.map": "/project-charity-react/static/js/main.018e0fba.chunk.js.map",
+    "runtime-main.js": "/project-charity-react/static/js/runtime-main.1f0363b2.js",
+    "runtime-main.js.map": "/project-charity-react/static/js/runtime-main.1f0363b2.js.map",
+    "static/css/2.5cbd10d4.chunk.css": "/project-charity-react/static/css/2.5cbd10d4.chunk.css",
+    "static/js/2.44f74277.chunk.js": "/project-charity-react/static/js/2.44f74277.chunk.js",
+    "static/js/2.44f74277.chunk.js.map": "/project-charity-react/static/js/2.44f74277.chunk.js.map",
+    "index.html": "/project-charity-react/index.html",
+    "static/css/2.5cbd10d4.chunk.css.map": "/project-charity-react/static/css/2.5cbd10d4.chunk.css.map",
+    "static/css/main.7ebc6406.chunk.css.map": "/project-charity-react/static/css/main.7ebc6406.chunk.css.map",
+    "static/js/2.44f74277.chunk.js.LICENSE.txt": "/project-charity-react/static/js/2.44f74277.chunk.js.LICENSE.txt",
+    "static/media/HomeStats.scss": "/project-charity-react/static/media/3 Columns Background.9ccdd5e6.png",
+    "static/media/Contact.scss": "/project-charity-react/static/media/Background-Contact-Form.655c5442.jpg",
+    "static/media/GiveAwayThingsForm.scss": "/project-charity-react/static/media/Icon-Arrow-Up.9418ff70.svg",
+    "static/media/NotFound.scss": "/project-charity-react/static/media/Decoration.aad75271.svg",
+    "static/media/Facebook.1c1ea3ae.svg": "/project-charity-react/static/media/Facebook.1c1ea3ae.svg",
+    "static/media/GiveAwayThingsWelcome.scss": "/project-charity-react/static/media/Form-Hero-Image.75cd7726.jpg",
+    "static/media/HomeWelcome.scss": "/project-charity-react/static/media/Home-Hero-Image.0c4f237f.jpg",
+    "static/media/HomeSimpleSteps.scss": "/project-charity-react/static/media/Icon-3.564c1731.svg",
+    "static/media/Instagram.5b663cf3.svg": "/project-charity-react/static/media/Instagram.5b663cf3.svg",
+    "static/media/People.2fa041c6.jpg": "/project-charity-react/static/media/People.2fa041c6.jpg",
+    "static/media/HomeAboutUs.scss": "/project-charity-react/static/media/Signature.8f2a001d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f0363b2.js",
+    "static/css/2.5cbd10d4.chunk.css",
+    "static/js/2.44f74277.chunk.js",
+    "static/css/main.7ebc6406.chunk.css",
+    "static/js/main.018e0fba.chunk.js"
+  ]
+}
