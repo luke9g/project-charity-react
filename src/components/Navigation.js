@@ -65,7 +65,7 @@ class Navigation extends React.Component {
               </li>
             </ul>
             <ul className="main-menu">
-              {this.props.location.pathname === "/" ?
+              {this.props.location.pathname === "/project-charity-react/" ?
                 <>
                   <li>
                     <ScrollLink to={"welcome"} spy={true} smooth={true} duration={500} onClick={this.handleMenu}>
@@ -96,27 +96,27 @@ class Navigation extends React.Component {
                 :
                 <>
                   <li>
-                    <HashLink to={"/#welcome"} onClick={this.handleMenu}>
+                    <HashLink to={"/project-charity-react/#welcome"} onClick={this.handleMenu}>
                       Start
                     </HashLink>
                   </li>
                   <li>
-                    <HashLink to={"/#simpleSteps"} onClick={this.handleMenu}>
+                    <HashLink to={"/project-charity-react/#simpleSteps"} onClick={this.handleMenu}>
                       O co chodzi?
                     </HashLink>
                   </li>
                   <li>
-                    <HashLink to={"/#aboutUs"} onClick={this.handleMenu}>
+                    <HashLink to={"/project-charity-react/#aboutUs"} onClick={this.handleMenu}>
                       O nas
                     </HashLink>
                   </li>
                   <li>
-                    <HashLink to={"/#whoWeHelp"} onClick={this.handleMenu}>
+                    <HashLink to={"/project-charity-react/#whoWeHelp"} onClick={this.handleMenu}>
                       Fundacja i organizacje
                     </HashLink>
                   </li>
                   <li>
-                    <HashLink to={"/#contact"} onClick={this.handleMenu}>
+                    <HashLink to={"/project-charity-react/#contact"} onClick={this.handleMenu}>
                       Kontakt
                     </HashLink>
                   </li>

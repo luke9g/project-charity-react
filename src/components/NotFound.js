@@ -9,7 +9,7 @@ function NotFound() {
         <h1>
           404 <br/> Nie ma strony o takim adresie!
         </h1>
-        <Link to={"/"}>
+        <Link to={"/project-charity-react"}>
           Strona główna
         </Link>
       </div>

@@ -10,7 +10,7 @@ function LoggedOut() {
           <h1>
             Wylogowanie nastąpiło<br/>pomyślnie!
           </h1>
-          <Link to={"/"}>
+          <Link to={"/project-charity-react"}>
             Strona główna
           </Link>
         </div>
